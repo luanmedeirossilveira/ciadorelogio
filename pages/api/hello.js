@@ -1,6 +1,21 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import dbConnect from "../../db/dbConnect"
+import Produtos from '../../models/Produtos'
 
-export default (req, res) => {
+dbConnect();
+
+export default async(req, res) => {
+
+  const data = JSON.parse(req.body);
+
+  const produtos = await Produtos.create({
+    image: data.image,
+    name: data.name,
+    value: data.value,
+    description: data.description,
+    type: data.type,
+    marca: data.marca
+  })
+
   res.statusCode = 200
-  res.json({ name: 'John Doe' })
+  res.json({ success: true, data: produtos })
 }

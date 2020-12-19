@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import { Breadcrumb } from 'react-bootstrap'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -10,6 +12,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+      <Breadcrumb className="breadcrumb">
+        <Breadcrumb.Item href="/">Início</Breadcrumb.Item>
+      </Breadcrumb>
+        
         <h1 className={styles.title}>
           Bem vindo à <span>Cia do Relógio</span>
         </h1>
@@ -26,7 +32,7 @@ export default function Home() {
           </a>
 
           <a
-            href="#"
+            href="/relogios"
             className={styles.card}
           >
             <h3>Relógios</h3>
@@ -45,7 +51,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
+      <footer className="footer">
         <a
           href="https://mokit.digital/"
           target="_blank"
