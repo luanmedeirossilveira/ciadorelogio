@@ -18,6 +18,9 @@ export default function Mormaii({ mormaii }){
                 <Breadcrumb.Item href="/relogios">
                     Relógio
                 </Breadcrumb.Item>
+                <Breadcrumb.Item href="/relogios/mormaii">
+                    Mormaii   
+                </Breadcrumb.Item>
             </Breadcrumb>
             <div className={styles.grid}>
                 <React.Fragment>

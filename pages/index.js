@@ -26,9 +26,9 @@ export default function Home() {
             <p>Têm sugestões, opiniões e críticas? Entre aqui e nos ajude a melhorar!</p>
           </a>
 
-          <a href="#" className={styles.card}>
-            <h3>Baterias e Pilhas</h3>
-            <p>Veja a lista de baterias e entre em contato conosco</p>
+          <a href="/pulseiras" className={styles.card}>
+            <h3>Pulseiras</h3>
+            <p>Veja a lista com marcas de pulseiras.</p>
           </a>
 
           <a
@@ -40,12 +40,12 @@ export default function Home() {
           </a>
 
           <a
-            href="#"
+            href={`https://wa.me/555137371597`}
             className={styles.card}
           >
             <h3>Contatos</h3>
             <p>
-              Encontre nossas lojas e entre em contato.
+              Entre em contato conosco pelo Whatsapp.
             </p>
           </a>
         </div>

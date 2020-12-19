@@ -18,6 +18,9 @@ export default function Casio({ casio }){
                 <Breadcrumb.Item href="/relogios">
                     Relógio
                 </Breadcrumb.Item>
+                <Breadcrumb.Item href="/relogios/casio">
+                    Casio   
+                </Breadcrumb.Item>
             </Breadcrumb>
             <div className={styles.grid}>
                 <React.Fragment>

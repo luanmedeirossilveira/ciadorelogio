@@ -18,6 +18,9 @@ export default function Champion({ champion }){
                 <Breadcrumb.Item href="/relogios">
                     Relógio
                 </Breadcrumb.Item>
+                <Breadcrumb.Item href="/relogios/champion">
+                    Champion 
+                </Breadcrumb.Item>
             </Breadcrumb>
             <div className={styles.grid}>
                 <React.Fragment>

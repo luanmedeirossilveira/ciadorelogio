@@ -6,27 +6,27 @@ import { Breadcrumb } from 'react-bootstrap'
 
 dbConnect().catch(()=>console.log)
 
-export default function Herweg({ herweg }){
+export default function Marry({ marry }){
 
-    const item = JSON.parse(herweg)
+    const item = JSON.parse(marry)
 
     return(
         <>
         <div className={styles.container}>
             <Breadcrumb className="breadcrumb">
                 <Breadcrumb.Item href="/">Início</Breadcrumb.Item>
-                <Breadcrumb.Item href="/relogios">
-                    Relógio
+                <Breadcrumb.Item href="/pulseiras">
+                    Pulseiras
                 </Breadcrumb.Item>
-                <Breadcrumb.Item href="/relogios/herweg">
-                    Herweg   
+                <Breadcrumb.Item href="/pulseiras/marry-montan">
+                    Marry Montan   
                 </Breadcrumb.Item>
             </Breadcrumb>
             <div className={styles.grid}>
                 <React.Fragment>
                     {item.map((item)=>{
                         return(
-                            <a key={item._id} href={`/relogios/${item._id}`} className={styles.card}>
+                            <a key={item._id} href={`/pulseiras/${item._id}`} className={styles.card}>
                                 <h3>{item.name}&rarr;</h3>
                                 <img src={item.image} 
                                     alt="model"
@@ -44,14 +44,14 @@ export default function Herweg({ herweg }){
 
 export async function getServerSideProps(){
 
-    const produtos = await Produtos.find({marca: "Herweg"});
+    const produtos = await Produtos.find({marca: "Marry Montan"});
 
 
     console.log(produtos)
 
     return {
         props: {
-            herweg: JSON.stringify(produtos)
+            marry: JSON.stringify(produtos)
         }
     }
 
