@@ -13,9 +13,9 @@ export default function Relogios() {
                     Relógio
                 </Breadcrumb.Item>
             </Breadcrumb>
-                <h1 className={styles.title}>
-                    Conheça nossas linhas de relógios
-                </h1>
+            <h1 className={styles.title}>
+                Conheça nossas linhas de relógios
+            </h1>
 
             <div className={styles.grid}>
                 <a href="/relogios/mormaii" className={styles.card}>
